@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .window{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+            overflow: hidden;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        .reel{
+            width: 500%;
+            height: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+            animation: slide 20s infinite;
+        }
+        .reel img{
+            width: 100%;
+            height: 100%;
+        }
+        .reel div{
+            width: 20%;
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+        .reel div h1{
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%);
+            color: antiquewhite; 
+        }
+        .reel div p{
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translateX(-50%);
+            color:aquamarine;
+        }
+        @keyframes slide {
+            0% {left: 0;}
+            15%{left: 0;}
+            20%{left: -100%;}
+            35%{left: -100%;}
+            45%{left: -200%}
+            55%{left: -200%;}
+            65%{left: -300%;}
+            75%{left: -300%;}
+            85%{left: -400%;}
+            95%{left: -400%;}
+            100%{left: 0%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="reel">
+            <div>
+                <img src="Images/dino.jpg" alt="">
+                <h1>Dinosaurs</h1>
+            </div>
+            <div>
+                <img src="Images/trex.jpg" alt="">
+                <h1>Tyrannosaurus rex</h1>
+                <p>Lived: 83.6 million years ago - 66 million years ago (Cretaceous)</p>
+            </div>
+            <div>
+                <img src="Images/triceratops.png" alt="">
+                <h1>Triceratops</h1>
+                <p>Lived: 83.5 million years ago - 66 million years ago (Campanian - Maastrichtian)</p>
+            </div>
+            <div>
+                <img src="Images/pterodactyl.jpg" alt="">
+                <h1>Pterodactyl</h1>
+                <p>Lived: 201.3 million years ago - 136.4 million years ago (Hettangian - Valanginian)</p>
+            </div>
+            <div>
+                <img src="Images/velociraptor.jpg" alt="">
+                <h1>Velociraptor</h1>
+                <p>Lived: 89.8 million years ago - 72.1 million years ago (Cretaceous - Maastrichtian)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
